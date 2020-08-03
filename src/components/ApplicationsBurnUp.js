@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import 'semantic-ui-css/semantic.min.css';
 import * as d3 from 'd3';
-import burndownData from '../Server_Data.csv'
+import burndownData from '../App_Data.csv'
 import Chart from 'react-apexcharts'; 
 
-export class ServerDashboard extends Component {
+export class ApplicationsBurnUp extends Component {
 
     state = {
         options: {},
@@ -45,8 +45,8 @@ export class ServerDashboard extends Component {
                     curve: 'smooth'
                 },
                 title: {
-                    text: 'Migration Burnup',
-                    align: 'left'
+                    text: 'Applications Migration Burnup',
+                    align: 'center'
                 },
                 xaxis: {
                     categories: waveLabels,
@@ -103,4 +103,4 @@ export class ServerDashboard extends Component {
     }
 }
 
-export default ServerDashboard
+export default ApplicationsBurnUp
