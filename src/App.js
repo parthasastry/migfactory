@@ -9,7 +9,7 @@ import AppSchedule from './components/AppSchedule';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Contacts from './components/Contacts';
-import Search from './components/Search';
+import Inventory from './components/Inventory';
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
             <ApplicationsBurnUp />
             <AppSchedule />
           </Route>
-          <Route exact path='/search'>
-            <Search />
+          <Route exact path='/inventory'>
+            <Inventory />
           </Route>
           <Route exact path='/about'>
             <About />
